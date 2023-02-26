@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Transfrom Scale </title>
+    <style>
+        /* Text ke koi pan vastu ne center thi motu karanu hoy attribute */
+        /* trandfrom: scale(1 to 10); */
+        /* trandfrom: translate(2); */
+        /* Text ke koi pan vastu ne center thi nanu karanu hoy attribute */
+        /* trandfrom: translate(1 to 0); */
+        /* trandfrom: translate(0.5); */
+        
+        .x {
+            height: 200px;
+            width: 200px;
+            background: gray;
+            font-size: 2rem;
+            color: #fff;
+            margin: 150px auto;
+            /* transform: scale(1.5); */
+        }
+        
+        .x:hover
+        /* hover ma automatic mouse nu curser layi jayiye to aapde height appisu to top thi height vadhase */
+        
+        {
+            height: 250px;
+            width: 250px;
+        }
+        
+        .x:hover
+        /* hover ma automatic mouse nu curser layi jayiye to aapde transfrom scale appisu to center thi height vadhase */
+        
+        {
+            transform: scale(2);
+        }
+        
+        .x:hover
+        /* hover ma automatic mouse nu curser layi jayiye to aapde transfrom- rotate,translate,scale appisu to center thi rotate, side ma jase, height vadhase */
+        /* transfrom: translate(x, y) rotate(0deg) scale(0.5) */
+        /* hover me jo end me hoga vo pahele react hoga */
+        /* hover me end se chalu hoga */
+        
+        {
+            transform: translate(200px) scale(0.5) rotate(45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="x">Hemant</div>
+</body>
+
+</html>
